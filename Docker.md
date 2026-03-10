@@ -20,8 +20,8 @@ The Dockerfile uses a **multi-stage build** approach:
 - **Stage 2 (Runtime)**: Runs the application on Tomcat 11 with OpenJDK 17
 
 **Base Images** (from AWS ECR Public):
-- Build: `public.ecr.aws/docker/library/maven:3.9-eclipse-temurin-17`
-- Runtime: `public.ecr.aws/docker/library/tomcat:11-jdk17`
+- Build: `public.ecr.aws/docker/library/maven:3.9-eclipse-temurin-25`
+- Runtime: `public.ecr.aws/docker/library/tomcat:11-jdk25`
 
 ## Prerequisites
 

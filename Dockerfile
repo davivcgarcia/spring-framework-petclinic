@@ -4,7 +4,7 @@
 # ============================================
 # Stage 1: Build Stage
 # ============================================
-FROM public.ecr.aws/docker/library/maven:3.9-eclipse-temurin-17 AS builder
+FROM public.ecr.aws/docker/library/maven:3.9-eclipse-temurin-25 AS builder
 
 # Set working directory
 WORKDIR /build
@@ -22,7 +22,7 @@ RUN ls -lh /build/target/petclinic.war
 # ============================================
 # Stage 2: Runtime Stage
 # ============================================
-FROM public.ecr.aws/docker/library/tomcat:11-jdk17
+FROM public.ecr.aws/docker/library/tomcat:11-jdk25
 
 # Metadata labels following OCI image spec
 LABEL maintainer="DevOps Team" \
